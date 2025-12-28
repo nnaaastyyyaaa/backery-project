@@ -1,0 +1,54 @@
+:root {
+  --color-primary-light: #faf4ea;
+  --color-primary-dark: #31261a;
+  --color-brand-light: #819b57;
+  --color-brand-dark: #465929;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  color: var(--color-primary-dark);
+}
+
+.main-nav {
+  color: var(--color-primary-light);
+}
+
+.main-nav:hover {
+  color: var(--color-brand-light);
+}
+
+.main-button {
+  background-color: var(--color-brand-light);
+  color: var(--color-primary-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 8px;
+}
+
+.main-button:hover {
+  background-color: transparent;
+  color: var(--color-brand-dark);
+}
+
+.hero-section .accent {
+  color: var(--color-brand-light);
+}
+
+.advantages-list {
+  background-color: var(--color-brand-light);
+}
+
+.tradition-section .accent {
+  color: var(--color-brand-light);
+}
+
+.chefs-section .accent {
+  color: var(--color-brand-dark);
+}
+
+.format-article {
+  color: var(--color-primary-light);
+}

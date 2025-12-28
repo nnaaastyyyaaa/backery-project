@@ -4,49 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main>
-      <header>
-        <nav>
-          <a href="#">
-            <img src="./images/logo.svg" alt="Лого cучасна пекарня" />
-          </a>
-          <ul>
-            <li><a href="#">Франшиза</a></li>
-            <li><a href="#">Наші традиції</a></li>
-            <li><a href="#">Формати</a></li>
-            <li><a href="#">Контакти</a></li>
-          </ul>
-        </nav>
-        <button type="button">Замовити дзвінок</button>
-      </header>
-      <section>
-        <h1>Сучасна пекарня</h1>
+    <header>
+      <nav>
+        <a href="./index.html">
+          <img src="./images/logo.svg" alt="Лого cучасна пекарня" />
+        </a>
         <ul>
+          <li>
+            <a class="main-nav" href="#tradition-section">Наші традиції</a>
+          </li>
+          <li><a class="main-nav" href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a class="main-nav" href="#formats-section">Формати</a></li>
+          <li><a class="main-nav" href="#contacts-section">Контакти</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="main-button">Замовити дзвінок</button>
+    </header>
+    <main>
+      <section class="hero-section">
+        <h1><span class="accent">Сучасна</span> пекарня</h1>
+        <ul class="advantages-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
       </section>
-      <section>
+      <section class="tradition-section" id="tradition-section">
         <h2>Новий формат традицій</h2>
         <p>
-          <span>shop bakery</span>— це пекарня, яка взяла все найкраще, і
-          зберегла смак традиційної випічки та натуральність інгредієнтів.
+          <span class="accent">shop bakery</span>— це пекарня, яка взяла все
+          найкраще, і зберегла смак традиційної випічки та натуральність
+          інгредієнтів.
         </p>
         <p>
           Ми працюємо як найвідоміші мережі—
-          <span>5 хвилин і замовлення готове.</span> А ще у наших пекарень
-          стильний дизайн та висока якість обслуговування!
+          <span class="accent">5 хвилин і замовлення готове.</span> А ще у наших
+          пекарень стильний дизайн та висока якість обслуговування!
         </p>
         <img
           src="./images/man-bread.svg"
           alt="Чоловік дивиться на хліб з посмішкою"
         />
       </section>
-      <section>
-        <h2>Наші найкращі шеф-кухарі</h2>
+      <section class="chefs-section" id="chefs-section">
+        <h2>Наші найкращі <span class="accent">шеф-кухарі</span></h2>
         <ul>
           <li>
             <article>
@@ -69,21 +73,25 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="formats-section">
         <h2>Формати</h2>
         <ul>
           <li>
-            <article lang="en"><h3>Walrus</h3></article>
+            <article class="format-article" lang="en"><h3>Walrus</h3></article>
           </li>
           <li>
-            <article lang="en"><h3>Horseshoe</h3></article>
+            <article class="format-article" lang="en">
+              <h3>Horseshoe</h3>
+            </article>
           </li>
           <li>
-            <article lang="en"><h3>Handlebar</h3></article>
+            <article class="format-article" lang="en">
+              <h3>Handlebar</h3>
+            </article>
           </li>
         </ul>
       </section>
-      <section>
+      <section id="contacts-section">
         <h2>Приєднуйся до мережі пекарень</h2>
       </section>
     </main>
@@ -91,25 +99,34 @@
       <nav>
         <a href=""></a>
         <ul>
-          <li><a href="#">Франшиза</a></li>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a class="main-nav" href="#">Франшиза</a></li>
+          <li><a class="main-nav" href="#">Наші традиції</a></li>
+          <li><a class="main-nav" href="#">Формати</a></li>
+          <li><a class="main-nav" href="#">Контакти</a></li>
         </ul>
       </nav>
       <address>
         <ul>
-          <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
           <li>
-            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+            <a class="main-nav" href="tel:+380960000007"
+              >+ 38 (096) 000 00 07</a
+            >
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/1LngnVrV8qcp1udo8" target="_blank"
+            <a class="main-nav" href="mailto:shopbakery@gmail.com"
+              >shopbakery@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="main-nav"
+              href="https://maps.app.goo.gl/1LngnVrV8qcp1udo8"
+              target="_blank"
               >Україна, м. Київ, вул. Січових Стрільців 54</a
             >
           </li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li><a class="main-nav" href="#"></a></li>
+          <li><a class="main-nav" href="#"></a></li>
         </ul>
         <a href="#">© 2022 Дані захищені</a>
       </address>
