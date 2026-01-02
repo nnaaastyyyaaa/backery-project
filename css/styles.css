@@ -1,3 +1,43 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v24-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
+}
+
 :root {
   --color-primary-light: #faf4ea;
   --color-primary-dark: #31261a;
@@ -9,16 +49,28 @@ ul {
   list-style-type: none;
 }
 
+h2 {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1.3;
+}
+
 body {
   color: var(--color-primary-dark);
+  font-family: poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .main-nav {
   color: var(--color-primary-light);
+  text-decoration: none;
 }
 
 .main-nav:hover {
   color: var(--color-brand-light);
+  font-weight: 600;
 }
 
 .main-button {
@@ -26,6 +78,7 @@ body {
   color: var(--color-primary-light);
   border: 2px solid var(--color-brand-light);
   border-radius: 8px;
+  font-weight: 600;
 }
 
 .main-button:hover {
@@ -33,22 +86,60 @@ body {
   color: var(--color-brand-dark);
 }
 
+.hero-section h1 {
+  font-weight: 900;
+  font-size: 128px;
+}
 .hero-section .accent {
   color: var(--color-brand-light);
 }
 
 .advantages-list {
   background-color: var(--color-brand-light);
+  color: var(--color-primary-light);
+  font-weight: 300;
+  font-size: 20px;
 }
 
 .tradition-section .accent {
   color: var(--color-brand-light);
+  font-weight: 600;
+}
+
+.tradition-section .first-accent {
+  text-transform: uppercase;
 }
 
 .chefs-section .accent {
   color: var(--color-brand-dark);
 }
 
+.chef {
+  font-weight: 600;
+  font-size: 40px;
+}
+
 .format-article {
   color: var(--color-primary-light);
+}
+
+.format {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.format-description {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.address-link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 14px;
 }
