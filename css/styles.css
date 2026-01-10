@@ -49,6 +49,8 @@
   box-sizing: border-box;
 }
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -87,6 +89,25 @@ p {
   padding: 48px 0;
 }
 /* header */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 40px;
+}
+.main-list {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 40px;
+}
+
 .main-nav {
   color: var(--color-primary-light);
   text-decoration: none;
@@ -95,7 +116,6 @@ p {
 
 .main-nav:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
 }
 
 .main-button {
@@ -104,6 +124,7 @@ p {
   border: 2px solid var(--color-brand-light);
   border-radius: 8px;
   font-weight: 600;
+  padding: 16px 32px;
 }
 
 .main-button:hover {
@@ -131,14 +152,30 @@ p {
   color: var(--color-brand-light);
 }
 
-.advantages-list {
+.advantages-section {
   background-color: var(--color-brand-light);
+  padding: 16px 0px;
+}
+.advantages-list {
   color: var(--color-primary-light);
   font-weight: 300;
   font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 /* tradition section */
+.tradition-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.text-container {
+  max-width: 710px;
+}
+
 .tradition-section {
   padding-top: 96px;
 }
@@ -149,6 +186,10 @@ p {
 
 .tradition-text {
   margin-bottom: 42px;
+}
+
+.tradition-text:last-child {
+  max-width: 340px;
 }
 
 .tradition-section .accent {
@@ -177,6 +218,18 @@ p {
 }
 
 /* format section */
+.format-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  border: 2px solid grey;
+  border-radius: 16px;
+  background-color: #465929;
+  flex-basis: calc((100% - 40px) / 3);
+  padding: 24px;
+}
 .format-article {
   color: var(--color-primary-light);
 }
@@ -200,6 +253,22 @@ p {
   margin-bottom: 16px;
 }
 /* footer */
+.footer {
+  background-color: #31261a;
+}
+.footer-container {
+  display: flex;
+  flex-grow: 1;
+  padding: 32px 8px;
+  gap: 166px;
+}
+
+.footer-nav {
+  display: flex;
+  text-align: center;
+  gap: 166px;
+}
+
 .address-link {
   font-style: normal;
   font-weight: 300;
@@ -207,6 +276,7 @@ p {
 }
 
 .copyright {
+  color: #a18268;
   font-weight: 400;
   font-size: 14px;
 }
