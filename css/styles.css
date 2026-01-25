@@ -43,6 +43,7 @@
   --color-primary-dark: #31261a;
   --color-brand-light: #819b57;
   --color-brand-dark: #465929;
+  --color-brand-light2: #a18268;
 }
 
 * {
@@ -62,6 +63,7 @@ h2 {
 
 body {
   color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
   font-family: poppins, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -88,6 +90,7 @@ p {
 .section {
   padding: 48px 0;
 }
+
 /* header */
 .header-container {
   display: flex;
@@ -142,12 +145,19 @@ p {
 }
 .hero-section {
   padding: 272px 0;
+  background-image: url(../images/hero-section-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
+
 .hero-title {
   text-align: center;
   font-weight: 900;
   font-size: 128px;
+  color: var(--color-primary-light);
 }
+
 .hero-section .accent {
   color: var(--color-brand-light);
 }
@@ -174,6 +184,11 @@ p {
 
 .text-container {
   max-width: 710px;
+}
+
+.man-bread {
+  border-radius: 400px 400px 0 0;
+  height: 466px;
 }
 
 .tradition-section {
@@ -213,8 +228,40 @@ p {
   font-size: 40px;
 }
 
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0px 0px var(--color-primary-light),
+    -16px 16px 0px 1px var(--color-brand-light2);
+}
+
+.chef-list {
+  display: flex;
+  gap: 30px;
+  padding-top: 80px;
+}
+
+.chef-article {
+  display: flex;
+}
+
+.chef-description {
+  max-width: 334px;
+  margin-left: 30px;
+}
+
+.chef-title::before,
+.chef-title::after {
+  display: block;
+  content: '';
+  border: 2px solid #cfcfbc;
+  max-width: 352px;
+}
+
 .chef-title {
   margin-bottom: 80px;
+  text-align: center;
+  max-width: 538px;
+  margin: 0 auto;
 }
 
 /* format section */
@@ -232,6 +279,7 @@ p {
 }
 .format-article {
   color: var(--color-primary-light);
+  height: 444px;
 }
 
 .format {
@@ -241,6 +289,7 @@ p {
 
 .format-title {
   margin-bottom: 80px;
+  text-align: center;
 }
 
 .format-description {
@@ -255,7 +304,11 @@ p {
 /* footer */
 .footer {
   background-color: #31261a;
+  background-image: url(../images/footer-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .footer-container {
   display: flex;
   flex-grow: 1;
