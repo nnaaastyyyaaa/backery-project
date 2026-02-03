@@ -35,7 +35,7 @@
           </h1>
         </div>
       </section>
-      <section class="advantages-section">
+      <section class="section advantages-section">
         <div class="container">
           <h2 class="visualy-hidden">Наші переваги</h2>
           <ul class="advantages-list">
@@ -76,8 +76,8 @@
             Наші найкращі <span class="accent">шеф-кухарі</span>
           </h2>
           <ul class="chef-list">
-            <li>
-              <article class="chef-article">
+            <li class="chef-article">
+              <article class="chef-card">
                 <img
                   class="chef-photo"
                   src="./images/nastya-chef.png"
@@ -85,14 +85,22 @@
                 />
                 <div class="chef-description">
                   <h3 class="chef">Настя</h3>
-                  <p>Привіт, я Настя!</p>
-                  <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-                  <p>Я випічу для вас найсмачніщі вироби!</p>
+                  <div class="chef-text">
+                    <p>Привіт, я Настя!</p>
+                    <p>
+                      Вже 10 років, я втілюю <br />
+                      у життя цікаві та смачні ідеї.
+                    </p>
+                    <p>
+                      Я випічу для вас <br />
+                      найсмачніщі вироби!
+                    </p>
+                  </div>
                 </div>
               </article>
             </li>
-            <li>
-              <article class="chef-article">
+            <li class="chef-article">
+              <article class="chef-card">
                 <img
                   class="chef-photo"
                   src="./images/vlad-chef.png"
@@ -113,63 +121,78 @@
           </ul>
         </div>
       </section>
-      <section id="section formats-section">
+      <section class="section" id="formats-section">
         <div class="container">
           <h2 class="format-title">Формати</h2>
-          <button type="button" class="carousel-button">
-            <svg width="16" height="16">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
-          <ul class="format-cards">
-            <li class="card">
-              <article class="format-article" lang="en">
-                <h3 class="format">Walrus</h3>
-                <div class="format-description">
-                  <p>Площа: до 120 м2</p>
-                  <p>Меню: розширене меню</p>
-                  <p>
-                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                    офіціанти-різнороби
-                  </p>
-                  <p>Посадкові місця: є</p>
-                </div>
-              </article>
-            </li>
-            <li class="card">
-              <article class="format-article" lang="en">
-                <h3 class="format">Horseshoe</h3>
-                <div class="format-description">
-                  <p>Площа: до 25 м2</p>
-                  <p>Меню: найпопулярніші позиції меню</p>
-                  <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
-                  <p>Посадкові місця: відсутні</p>
-                </div>
-              </article>
-            </li>
-            <li class="card">
-              <article class="format-article" lang="en">
-                <h3 class="format">Handlebar</h3>
-                <div class="format-description">
-                  <p>Площа: до 15 м2</p>
-                  <p>Меню: найпопулярніші позиції меню</p>
-                  <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                  <p>Посадкові місця: відсутні</p>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <button type="button" class="carousel-button">
-            <svg width="16" height="16">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
+          <div class="formats-container">
+            <button type="button" class="carousel-button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="format-cards">
+              <li class="card">
+                <article class="format-article" lang="en">
+                  <h3 class="format">Walrus</h3>
+                  <div class="format-description">
+                    <p>Площа: до 120 м2</p>
+                    <p>Меню: розширене меню</p>
+                    <p>
+                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби
+                    </p>
+                    <p>Посадкові місця: є</p>
+                  </div>
+                </article>
+              </li>
+              <li class="card">
+                <article class="format-article" lang="en">
+                  <h3 class="format">Horseshoe</h3>
+                  <div class="format-description">
+                    <p>Площа: до 25 м2</p>
+                    <p>Меню: найпопулярніші позиції меню</p>
+                    <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                    <p>Посадкові місця: відсутні</p>
+                  </div>
+                </article>
+              </li>
+              <li class="card">
+                <article class="format-article" lang="en">
+                  <h3 class="format">Handlebar</h3>
+                  <div class="format-description">
+                    <p>Площа: до 15 м2</p>
+                    <p>Меню: найпопулярніші позиції меню</p>
+                    <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                    <p>Посадкові місця: відсутні</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button type="button" class="carousel-button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section id="section contacts-section">
+      <section class="section contacts-section" id="contacts-section">
         <div class="container">
-          <h2 class="contact-title">Приєднуйся до мережі пекарень</h2>
-          <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="contact-title">Приєднуйся до мережі пекарень</h2>
+              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+            </div>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1770137744249!5m2!1sru!2sua"
+              width="600"
+              height="600"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
@@ -177,7 +200,7 @@
       <div class="container">
         <div class="footer-container">
           <nav class="footer-nav">
-            <div class="logo">
+            <div class="footer-logo">
               <a href="./index.html">
                 <img src="./images/logo.svg" alt="Лого cучасна пекарня" />
               </a>
@@ -197,8 +220,8 @@
               </li>
             </ul>
           </nav>
-          <address>
-            <ul class="contacts">
+          <address class="footer-address">
+            <ul class="address-list">
               <li class="footer-item">
                 <a class="main-nav address-link" href="tel:+380960000007"
                   >+ 38 (096) 000 00 07</a
@@ -236,13 +259,13 @@
                 </li>
               </div>
             </ul>
+            <div class="address-info">
+              <a href="#" target="_blank" class="main-nav address-link"
+                >Політика конфіденційності</a
+              >
+              <p class="copyright">&copy; 2022 Дані захищені</p>
+            </div>
           </address>
-          <div class="last-items">
-            <a href="#" target="_blank" class="main-nav address-link"
-              >Політика конфіденційності</a
-            >
-            <p class="copyright">&copy; 2022 Дані захищені</p>
-          </div>
         </div>
       </div>
     </footer>
