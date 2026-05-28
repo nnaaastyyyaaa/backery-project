@@ -185,6 +185,47 @@
             <div class="contact-form">
               <h2 class="contact-title">Приєднуйся до мережі пекарень</h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <form name="modal-form">
+                <div>
+                  <label class="visualy-hidden" for="user-name">Імʼя</label>
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Імʼя"
+                    name="user-name"
+                    id="user-name"
+                  />
+                </div>
+                <div>
+                  <label class="visualy-hidden" for="user-tel">Телефон</label>
+                  <input
+                    class="input"
+                    type="tel"
+                    placeholder="Телефон"
+                    name="user-tel"
+                    id="user-tel"
+                  />
+                </div>
+                <div>
+                  <label class="visualy-hidden" for="user-email"
+                    >Електронна пошта</label
+                  >
+                  <input
+                    class="input"
+                    type="email"
+                    placeholder="Електронна пошта"
+                    name="user-email"
+                    id="user-email"
+                  />
+                </div>
+                <button type="button" class="main-button modal-button">
+                  Замовити дзвінок
+                </button>
+                <p class="modal-terms">
+                  Натискаючи на кнопку я погоджуюсь з
+                  <a href="#">політикою конфіденційності</a>
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -275,6 +316,52 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-button-close" type="button">Close</button>
+        <h2 class="modal-title">Замовити дзвінок</h2>
+        <p class="modal-p">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form name="modal-form">
+          <div>
+            <label class="visualy-hidden" for="user-name">Імʼя</label>
+            <input
+              class="input"
+              type="text"
+              placeholder="Імʼя"
+              name="user-name"
+              id="user-name"
+            />
+          </div>
+          <div>
+            <label class="visualy-hidden" for="user-tel">Телефон</label>
+            <input
+              class="input"
+              type="tel"
+              placeholder="Телефон"
+              name="user-tel"
+              id="user-tel"
+            />
+          </div>
+          <div>
+            <label class="visualy-hidden" for="user-email"
+              >Електронна пошта</label
+            >
+            <input
+              class="input"
+              type="email"
+              placeholder="Електронна пошта"
+              name="user-email"
+              id="user-email"
+            />
+          </div>
+          <button type="button" class="main-button modal-button">
+            Замовити дзвінок
+          </button>
+          <p class="modal-terms">
+            Натискаючи на кнопку я погоджуюсь з
+            <a href="#">політикою конфіденційності</a>
+          </p>
+          <img src="./images/modal-icon.png" alt="іконка хлібу" />
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
