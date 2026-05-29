@@ -500,12 +500,12 @@ p {
 }
 
 .modal {
-  position: relative;
   width: 880px;
   height: 880px;
+  position: relative;
   background-color: var(--color-primary-light);
   border-radius: 32px;
-  padding: 123px 123px 108px 123px;
+  padding: 128px 128px 108px 128px;
 }
 
 .modal-button-close {
@@ -530,11 +530,12 @@ p {
 }
 
 .input {
-  width: 100%;
+  height: 55px;
+  width: 605px;
   padding: 16px 42px;
   border: 1px solid var(--color-brand-light2);
   border-radius: 8px;
-  margin-bottom: 32px;
+  margin: 0 10px 32px 10px;
   background-color: transparent;
 }
 
@@ -550,7 +551,11 @@ p {
 .modal-button {
   display: block;
   margin: 0 auto;
+  font-weight: 600;
+  font-size: 18px;
   margin-bottom: 24px;
+  width: 238px;
+  height: 60px;
 }
 
 .modal-terms {
@@ -567,10 +572,16 @@ p {
   color: var(--color-primary-dark);
 }
 
-.modal img {
+.modal .modal-bread-icon {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 180px;
   height: 240px;
+}
+
+.modal-button-close {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
