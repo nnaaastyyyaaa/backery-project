@@ -1,0 +1,18 @@
+.tradition-section {
+  padding-top: 96px;
+
+  &__traditions-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__text-container {
+    max-width: 710px;
+  }
+
+  &__man-bread {
+    border-radius: 400px 400px 0 0;
+    height: 466px;
+  }
+}

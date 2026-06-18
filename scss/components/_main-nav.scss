@@ -1,0 +1,11 @@
+.main {
+  &__nav {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-brand-light);
+    }
+  }
+}

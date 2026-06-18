@@ -1,33 +1,26 @@
+@import './components/main-button';
+@import './components/main-nav';
+@import './components/text-container';
+@import './components/chef-article';
+@import './components/format-card';
+@import './components/format-description';
+@import './components/form';
+@import './components/contact-form';
+@import './components/address';
+@import './components/icons';
+@import './components/backdrop';
+@import './layouts/contacts';
+@import './layouts/container';
+@import './layouts/header';
+@import './layouts/main';
+@import './layouts/advantages';
+@import './layouts/traditions';
+@import './layouts/chefs';
+@import './layouts/formats';
+@import './layouts/contacts';
+@import './layouts/footer';
+@import './layouts/modal';
 @import './utils/fonts.scss';
-
 @import './utils/variables';
-
 @import './utils/base';
-
 @import './utils/utils';
-
-.container {
-  width: 100%;
-  max-width: 1288px;
-  margin: 0 auto;
-}
-
-.section {
-  padding: 48px 0;
-}
-
-@import './components/header';
-
-@import './components/main';
-
-@import './components/traditions';
-
-@import './components/chefs';
-
-@import './components/formats';
-
-@import './components/contacts';
-
-@import './components/footer';
-
-@import './components/modal';

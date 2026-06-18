@@ -1,0 +1,22 @@
+.text-container {
+  &__title {
+    margin-bottom: 42px;
+  }
+
+  &__text {
+    margin-bottom: 42px;
+
+    &:last-child {
+      max-width: 340px;
+    }
+
+    &--accent {
+      color: var(--color-brand-light);
+      font-weight: 600;
+    }
+
+    &--first-accent {
+      text-transform: uppercase;
+    }
+  }
+}

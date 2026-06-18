@@ -1,0 +1,40 @@
+.modal {
+  width: 880px;
+  height: 880px;
+  position: relative;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+  padding: 128px 128px 108px 128px;
+
+  &__close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 131%;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+
+  &__bread-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 180px;
+    height: 240px;
+  }
+}

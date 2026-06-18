@@ -1,0 +1,23 @@
+.address {
+  &__list,
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 22px;
+  }
+
+  &__copyright {
+    color: #a18268;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
